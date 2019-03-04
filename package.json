@@ -1,0 +1,38 @@
+{
+  "name": "jest-image",
+  "version": "1.0.0",
+  "description": "Custom jest matchers to test the visual regression",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaqqaz/jest-image.git"
+  },
+  "keywords": [
+    "jest",
+    "image",
+    "comparison",
+    "snapshot",
+    "image comparison",
+    "image snapshot"
+  ],
+  "author": "zaqqaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaqqaz/jest-image/issues"
+  },
+  "homepage": "https://github.com/zaqqaz/jest-image#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/lodash": "^4.14.121",
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^11.10.4"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1"
+  }
+}
