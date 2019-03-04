@@ -4,9 +4,6 @@
     "declaration": true,
     "suppressImplicitAnyIndexErrors": false,
     "baseUrl": "./",
-    "paths": {
-       "jest-image/*": ["./src/*"]
-    },
     "target": "es6",
     "outDir": "dist",
     "module": "commonjs",
