@@ -1,16 +1,16 @@
 import * as fs from "fs";
 import * as path from "path";
-import { checkSnapshotUpdateState, updateSnapshotState } from "jest-image/helpers/updateSnapshotState";
-import { SNAPSHOTS_DIR } from "jest-image/helpers/const";
-import { saveImage } from "jest-image/helpers/saveImage";
-import { generateSnapshotIdentifier } from "jest-image/helpers/generateSnapshotIdentifier";
+import { checkSnapshotUpdateState, updateSnapshotState } from "../helpers/updateSnapshotState";
+import { SNAPSHOTS_DIR } from "../helpers/const";
+import { saveImage } from "../helpers/saveImage";
+import { generateSnapshotIdentifier } from "../helpers/generateSnapshotIdentifier";
 
 export interface ToMatchImageBufferConfig {
-    customSnapshotIdentifier: string;
-    customSnapshotsDir: string;
+    customSnapshotIdentifier?: string;
+    customSnapshotsDir?: string;
 }
 
-export function toMatchImageBuffer(this: any, receivedImageBuffer: Buffer, config: ToMatchImageBufferConfig) {
+export function toMatchImageBuffer(this: any, receivedImageBuffer: Buffer, config: ToMatchImageBufferConfig = {}) {
     const {
         testPath,
         currentTestName,
@@ -62,7 +62,7 @@ export function toMatchImageBuffer(this: any, receivedImageBuffer: Buffer, confi
 
     const baseLineImageBuffer = fs.readFileSync(baselineSnapshotPath);
     return {
-        pass: baseLineImageBuffer === receivedImageBuffer,
+        pass: baseLineImageBuffer.equals(receivedImageBuffer),
         message: () => `Image buffers are different`,
     }
 }
