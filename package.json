@@ -1,11 +1,12 @@
 {
   "name": "jest-image",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Custom jest matchers to test the visual regression",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublish": "cp package.json dist/package.json && cd dist"
+    "prepare:pub": "cp package.json dist/package.json && cp README.md dist/README.md && cd dist",
+    "pub": "yarn build && yarn prepare:pub && yarn publish -f"
   },
   "main": "dist/index.ts",
   "repository": {
