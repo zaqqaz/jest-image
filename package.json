@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublish": "rm -rf ./dist && yarn build"
+    "prepublish": "yarn build"
   },
   "main": "dist/index.js",
   "repository": {
