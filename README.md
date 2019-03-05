@@ -52,6 +52,7 @@ expect.extend({ toMatchImageBuffer })
 ```typescript
 toMatchImageBuffer(buffer: Buffer)
 ```
+[Example](https://github.com/zaqqaz/jest-image/blob/master/src/matchers/__tests__/toMatchImageBuffer.spec.ts).
+It's the fastest way to compare images.
 
-Fastest way to compare images.
-It takes less than 1ms to get a result.
+*It takes less than 1ms to get a result.*
