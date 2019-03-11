@@ -1,6 +1,6 @@
 {
   "name": "jest-image",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Custom jest matchers to test the visual regression",
   "scripts": {
     "build": "tsc",
@@ -34,7 +34,7 @@
     "@types/node": "^11.10.4",
     "@types/pngjs": "^3.3.2",
     "@types/rimraf": "^2.0.2",
-    "jest": "^24.1.0",
+    "jest": "^24.4.0",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333"
   },
