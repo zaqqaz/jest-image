@@ -5,12 +5,12 @@ expect.extend({ toMatchImageBuffer });
 
 describe("toMatchImageBuffer", () => {
     it("Should match", async () => {
-        const baseLineImageBuffer = fs.readFileSync("./src/matchers/__tests__/1.png");
+        const baseLineImageBuffer = fs.readFileSync("./src/matchers/__tests__/assets/1.png");
         (expect(baseLineImageBuffer) as any).toMatchImageBuffer();
     });
 
     it("Should not match", async () => {
-        const baseLineImageBuffer = fs.readFileSync("./src/matchers/__tests__/2.png");
+        const baseLineImageBuffer = fs.readFileSync("./src/matchers/__tests__/assets/2.png");
         let hasError = false;
 
         try {
