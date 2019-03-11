@@ -47,6 +47,17 @@ expect.extend({ toMatchImageBuffer })
 
 <hr />
 
+### `toMatchImageSnapshot`
+
+```typescript
+toMatchImageSnapshot(buffer: Buffer)
+```
+[Example](https://github.com/zaqqaz/jest-image/blob/master/src/matchers/__tests__/toMatchImageSnapshot.spec.ts).
+
+The most powerful way to compare image snapshots.
+
+[ ] Add documentation.
+
 ### `toMatchImageBuffer`
 
 ```typescript
@@ -56,3 +67,13 @@ toMatchImageBuffer(buffer: Buffer)
 It's the fastest way to compare images.
 
 *It takes less than 1ms to get a result.*
+
+### `toMatchMarkupToImageSnapshot`
+
+```typescript
+toMatchMarkupToImageSnapshot(html: string)
+```
+
+[ ] Implement me.
+
+[ ] Add documentation.
