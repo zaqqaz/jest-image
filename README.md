@@ -56,7 +56,7 @@ toMatchImageSnapshot(buffer: Buffer)
 
 The most powerful way to compare image snapshots.
 
-[ ] Add documentation.
+- [ ] Add more examples
 
 ### `toMatchImageBuffer`
 
@@ -74,6 +74,6 @@ It's the fastest way to compare images.
 toMatchMarkupToImageSnapshot(html: string)
 ```
 
-[ ] Implement me.
+- [ ] Implement me.
 
-[ ] Add documentation.
+- [ ] Add documentation.
