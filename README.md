@@ -1,6 +1,6 @@
 # jest-image 🌇 vs 🌆
 ```diff
-+ BLAZING FAST 🔥🚀
+BLAZING FAST 🔥🚀
 ```
 #### Custom jest matchers to test the visual regression
 
