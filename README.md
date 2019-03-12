@@ -1,8 +1,5 @@
 # jest-image 🌇 vs 🌆
-```diff
-BLAZING FAST 🔥🚀
-```
-#### Custom jest matchers to test the visual regression
+#### Blazing fast custom jest matchers to test the visual regression 🔥🚀
 
 [![CircleCI](https://circleci.com/gh/zaqqaz/jest-image/tree/master.svg?style=svg)](https://circleci.com/gh/zaqqaz/jest-image/tree/master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
